@@ -1,0 +1,176 @@
+PQ 21:32:21:840 JTS-Main: ------------------------------- TWS RESTART --------------------------------
+PQ 21:32:21:919 JTS-Main: Jts dir is /home/unicycle/unicycletrading/IBJts/
+PQ 21:32:21:931 JTS-Main: PROXY Installed custom selector
+PQ 21:32:21:935 JTS-Main: Region:America dr:false
+PQ 21:32:21:935 JTS-Main: Property locale_to_use=en
+PQ 21:32:21:935 JTS-Main: JTS Locale=en_US  country=United States  variant=
+PQ 21:32:21:935 JTS-Main: Using JAR file:/home/unicycle/unicycletrading/IBJts/language.jar
+PQ 21:32:21:936 JTS-Main: Locale=en_US  country=United States  variant=
+PQ 21:32:21:936 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
+PQ 21:32:21:936 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
+PQ 21:32:21:937 JTS-Main: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
+PQ 21:32:21:937 JTS-Main: prohibiting class lookup [ji18n.Language]
+PQ 21:32:21:949 JTS-Main: prohibiting class lookup [ji18n.Language_en]
+PQ 21:32:21:950 JTS-Main: prohibiting class lookup [ji18n.Language_en_US]
+PQ 21:32:21:950 JTS-Main: prohibiting resource lookup [ji18n/Language_en_US.properties]
+PQ 21:32:21:950 JTS-Main:   actual locale: en
+PQ 21:32:22:115 JTS-Main: prohibiting class lookup [org.jfree.chart.LocalizationBundle]
+PQ 21:32:22:154 JTS-Main: prohibiting class lookup [org.jfree.chart.LocalizationBundle_en]
+PQ 21:32:22:154 JTS-Main: prohibiting resource lookup [org/jfree/chart/LocalizationBundle_en.properties]
+PQ 21:32:22:154 JTS-Main: prohibiting class lookup [org.jfree.chart.LocalizationBundle_en_US]
+PQ 21:32:22:154 JTS-Main: prohibiting resource lookup [org/jfree/chart/LocalizationBundle_en_US.properties]
+PQ 21:32:22:154 JTS-Main: prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle]
+PQ 21:32:22:155 JTS-Main: prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle_en]
+PQ 21:32:22:155 JTS-Main: prohibiting resource lookup [org/jfree/chart/plot/LocalizationBundle_en.properties]
+PQ 21:32:22:155 JTS-Main: prohibiting class lookup [org.jfree.chart.plot.LocalizationBundle_en_US]
+PQ 21:32:22:155 JTS-Main: prohibiting resource lookup [org/jfree/chart/plot/LocalizationBundle_en_US.properties]
+PQ 21:32:23:049 JTS-Main: jfreechart version =1.0.8
+PQ 21:32:23:049 JTS-Main: jcommon version =1.0.12
+PQ 21:32:23:052 JTS-Main: plugin support version =1.0
+PQ 21:32:23:064 JTS-Main: JDOMFactory Class =interface org.jdom.JDOMFactory
+PQ 21:32:23:113 JTS-Main: hsqldb jdbc =class org.hsqldb.jdbcDriver
+PQ 21:32:23:136 JTS-Main: Build 918.9a, Jul 22, 2011 2:44:08 PM
+PQ 21:32:23:250 JTS-Main: LookAndFeelChangedListener installed
+PQ 21:32:23:253 JTS-Main: JtsLookAndFeel initialized
+PQ 21:32:23:517 JTS-Main: Current LAF: TWS LAF
+PQ 21:32:23:520 JTS-Main: java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+Using org.netbeans.jemmy.drivers.DefaultDriverInstaller driver installer
+Trace:
+Start to wait frame "Frame with title "Login"" opened
+PQ 21:32:24:323 AWT-EventQueue-0: Started on 20140417-02:32:24
+PQ 21:32:24:326 AWT-EventQueue-0: Default timezone:America/Chicago name:Central Standard Time dst:3600000
+PQ 21:32:24:326 AWT-EventQueue-0: java version = 1.6.0_26
+PQ 21:32:24:326 AWT-EventQueue-0: sun.arch.data.model = 64
+PQ 21:32:24:326 AWT-EventQueue-0: os = Linux
+PQ 21:32:24:326 AWT-EventQueue-0: runtime = Java(TM) SE Runtime Environment
+PQ 21:32:24:326 AWT-EventQueue-0: vendor = Sun Microsystems Inc.
+PQ 21:32:24:326 AWT-EventQueue-0: vm name = Java HotSpot(TM) 64-Bit Server VM
+PQ 21:32:24:430 AWT-EventQueue-0: WebRegionURL Path:/java/classes/locales.jar URL:http://www.interactivebrokers.com/java/classes/locales.jar
+PQ 21:32:24:839 AWT-EventQueue-0: downloading file: /home/unicycle/unicycletrading/IBJts/locales.jar
+PQ 21:32:24:840 AWT-EventQueue-0: Starting to download file: /java/classes/locales.jar
+PQ 21:32:25:202 AWT-EventQueue-0: Finished downloading file: /java/classes/locales.jar
+PQ 21:32:25:642 AWT-EventQueue-0: Basic init done. Login window shown
+Trace:
+Frame "Frame with title "Login"" has been opened in 1509 milliseconds
+    twslaunch.jclient.wb[frame0,433,162,500x443,layout=java.awt.BorderLayout,title=Login,normal,defaultCloseOperation=DISPOSE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,500x443,layout=jtscomponents.plaf.wc,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]
+Trace:
+Start to wait action "Wait Any javax.swing.JTextField loaded"
+PQ 21:32:26:221 AWT-EventQueue-0: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:221 AWT-EventQueue-0: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+Trace:
+"Wait Any javax.swing.JTextField loaded" action has been produced in 509 milliseconds with result 
+    : javax.swing.JTextField[,136,50,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@665c1eae,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING]
+Trace:
+Start to wait action "Wait Any javax.swing.JPasswordField loaded"
+Trace:
+"Wait Any javax.swing.JPasswordField loaded" action has been produced in 0 milliseconds with result 
+    : javax.swing.JPasswordField[,136,74,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@396c75ed,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING,echoChar=?]
+Trace:
+Start to wait action "Wait AbstractButton with text "Login" loaded"
+Trace:
+"Wait AbstractButton with text "Login" loaded" action has been produced in 1 milliseconds with result 
+    : javax.swing.JButton[,160,7,60x18,disabled,alignmentX=0.0,alignmentY=0.5,border=jtscomponents.plaf.lf@b6e1782,flags=16777632,maximumSize=java.awt.Dimension[width=60,height=18],minimumSize=java.awt.Dimension[width=60,height=18],preferredSize=java.awt.Dimension[width=60,height=18],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Login,defaultCapable=true]
+Typing text "toddm254" from 0 position in text component
+    : javax.swing.JTextField[,136,50,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@665c1eae,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING]
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:295 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:296 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+Wait "toddm254" text starting from -1 position in component 
+    : javax.swing.JTextField[,136,50,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@665c1eae,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING]
+Typing text ".J#x7&AC" from 0 position in text component
+    : javax.swing.JPasswordField[,136,74,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@396c75ed,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING,echoChar=?]
+PQ 21:32:26:335 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:335 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:335 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:335 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:336 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:336 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:336 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+PQ 21:32:26:337 AWT-EventQueue-1: Error getting caps lock state - java.lang.UnsupportedOperationException: Toolkit.getLockingKeyState
+Wait ".J#x7&AC" text starting from -1 position in component 
+    : javax.swing.JPasswordField[,136,74,218x18,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.BorderUIResource@396c75ed,flags=296,maximumSize=java.awt.Dimension[width=2147483647,height=18],minimumSize=java.awt.Dimension[width=2,height=18],preferredSize=java.awt.Dimension[width=167,height=18],caretColor=jtscomponents.plaf.ih[r=0,g=0,b=0] (edit.fg),disabledTextColor=jtscomponents.plaf.ih[r=64,g=64,b=64] (dis.fg),editable=true,margin=javax.swing.plaf.InsetsUIResource[top=0,left=0,bottom=0,right=0],selectedTextColor=jtscomponents.plaf.ih[r=51,g=51,b=51] (sel.fg),selectionColor=jtscomponents.plaf.ih[r=184,g=207,b=229] (sel.bg),columns=15,columnWidth=11,command=,horizontalAlignment=LEADING,echoChar=?]
+Push button
+    :javax.swing.JButton[,160,7,60x18,alignmentX=0.0,alignmentY=0.5,border=jtscomponents.plaf.lf@b6e1782,flags=16777632,maximumSize=java.awt.Dimension[width=60,height=18],minimumSize=java.awt.Dimension[width=60,height=18],preferredSize=java.awt.Dimension[width=60,height=18],defaultIcon=,disabledIcon=,disabledSelectedIcon=,margin=javax.swing.plaf.InsetsUIResource[top=2,left=14,bottom=2,right=14],paintBorder=true,paintFocus=true,pressedIcon=,rolloverEnabled=true,rolloverIcon=,rolloverSelectedIcon=,selectedIcon=,text=Login,defaultCapable=true]
+PQ 21:32:26:425 AWT-EventQueue-1: username = Stoddm254
+PQ 21:32:26:426 AWT-EventQueue-1: Setting dir is /home/unicycle/unicycletrading/IBJts/
+PQ 21:32:26:429 AWT-EventQueue-1: PROXY Cleared HTTP proxy
+PQ 21:32:26:461 AWT-EventQueue-1: host = gw1.ibllc.com
+PQ 21:32:26:462 AWT-EventQueue-1: remotePort = 4000
+PQ 21:32:26:462 AWT-EventQueue-1: localPort = 0
+PQ 21:32:26:463 AWT-EventQueue-1: SPLASH Creating screen with 60 steps
+PQ 21:32:26:624 AWT-EventQueue-1: Prelogin delay:0
+PQ 21:32:26:625 JTS-Login-1: Starting
+PQ 21:32:26:691 JTS-Login-1: Connecting gw1.ibllc.com:4000 timeout=0
+PQ 21:32:26:848 JTS-Login-1: Connected to gw1.ibllc.com:4000 on local port 0
+PQ 21:32:26:849 JTS-Login-1: Authenticating
+PQ 21:32:26:854 JTS-CCPListener-2: Starting
+PQ 21:32:26:855 JTS-CCPListener-2: Initial listener buffer size is 43690
+PQ 21:32:26:921 JTS-Login-1: Sending connect request
+PQ 21:32:26:921 JTS-AuthDispatcher-3: Starting
+PQ 21:32:26:923 JTS-Login-1: Terminating
+PQ 21:32:26:996 JTS-AuthDispatcher-3: SPLASH -0001 step 1 AuthDispatcher.processDataItr
+PQ 21:32:26:998 JTS-AuthDispatcher-3: Received NS_AUTH_START: 1
+PQ 21:32:26:998 JTS-AuthDispatcher-3: NS_AUTH_START config: 1
+PQ 21:32:26:998 JTS-AuthDispatcher-3: pwd time to expiry ms: 2704674383000 days: 31305
+PQ 21:32:27:002 JTS-AuthDispatcher-3: sendXYZMessage: 777
+PQ 21:32:27:074 AWT-EventQueue-1: SPLASH Authenticating
+PQ 21:32:27:080 JTS-AuthDispatcher-3: Receiver: 777
+PQ 21:32:27:080 JTS-AuthDispatcher-3: processXYZMessage: 777 protocol version: 7
+PQ 21:32:27:080 JTS-AuthDispatcher-3: Received AUTH_PARAMS
+PQ 21:32:27:089 JTS-AuthDispatcher-3: sendXYZMessage: 777
+PQ 21:32:27:163 JTS-AuthDispatcher-3: Receiver: 777
+PQ 21:32:27:163 JTS-AuthDispatcher-3: processXYZMessage: 777 protocol version: 7
+PQ 21:32:27:164 JTS-AuthDispatcher-3: Received SERVER_PARAMS
+PQ 21:32:27:186 JTS-AuthDispatcher-3: sendXYZMessage: 777
+PQ 21:32:27:258 JTS-AuthDispatcher-3: SPLASH 0264 step 2 AuthDispatcher.processDataItr
+PQ 21:32:27:258 JTS-AuthDispatcher-3: Receiver: 777
+PQ 21:32:27:258 JTS-AuthDispatcher-3: processXYZMessage: 777 protocol version: 7
+PQ 21:32:27:258 JTS-AuthDispatcher-3: Received AUTH_RESULT
+PQ 21:32:27:258 JTS-AuthDispatcher-3: Passed pwd authentication.
+PQ 21:32:27:258 JTS-AuthDispatcher-3: Authentication completed.
+PQ 21:32:27:368 JTS-AuthDispatcher-3: Received NS_CONNECT_RESPONSE
+PQ 21:32:27:440 JTS-AuthDispatcher-3: Received NS_FIX_START
+PQ 21:32:27:441 JTS-AuthDispatcher-3: Terminating
+PQ 21:32:27:441 JTS-PostAuthenticate-5: Authentication complete
+PQ 21:32:27:461 JTS-PostAuthenticate-5: jfreechart version =1.0.8
+PQ 21:32:27:461 JTS-PostAuthenticate-5: jcommon version =1.0.12
+PQ 21:32:27:461 JTS-PostAuthenticate-5: plugin support version =1.0
+PQ 21:32:27:461 JTS-PostAuthenticate-5: JDOMFactory Class =interface org.jdom.JDOMFactory
+PQ 21:32:27:461 JTS-PostAuthenticate-5: hsqldb jdbc =class org.hsqldb.jdbcDriver
+PQ 21:32:27:463 AWT-EventQueue-1: jtsLookAndFeel uninitialized
+PQ 21:32:27:463 AWT-EventQueue-1: JtsLookAndFeel initialized
+PQ 21:32:27:466 JTS-Order-Audit-6: Starting
+PQ 21:32:27:470 AWT-EventQueue-1: Current LAF: TWS LAF
+PQ 21:32:27:471 JTS-PostAuthenticate-5: Locale=en_US  country=United States  variant=
+PQ 21:32:27:471 JTS-PostAuthenticate-5: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage]
+PQ 21:32:27:473 JTS-PostAuthenticate-5: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en]
+PQ 21:32:27:473 JTS-PostAuthenticate-5: prohibiting class lookup [twslaunch.ji18n.LauncherLanguage_en_US]
+PQ 21:32:27:473 JTS-PostAuthenticate-5: prohibiting class lookup [ji18n.Language]
+PQ 21:32:27:503 JTS-PostAuthenticate-5: prohibiting class lookup [ji18n.Language_en]
+PQ 21:32:27:504 JTS-PostAuthenticate-5: prohibiting class lookup [ji18n.Language_en_US]
+PQ 21:32:27:504 JTS-PostAuthenticate-5: prohibiting resource lookup [ji18n/Language_en_US.properties]
+PQ 21:32:27:504 JTS-PostAuthenticate-5:   actual locale: en
+PQ 21:32:27:691 JTS-PostAuthenticate-5: SPLASH 0433 step 3 TWSFixLogonHandler.startFixLogon
+PQ 21:32:27:692 JTS-PostAuthenticate-5: SPLASH Requesting startup parameters
+PQ 21:32:27:692 JTS-colinit-8: Initinig ticker columns
+PQ 21:32:27:695 JTS-LogonDispatcher-9: Starting
+PQ 21:32:27:695 JTS-PostAuthenticate-5: SPLASH Requesting startup parameters
+PQ 21:32:27:699 JTS-PostAuthenticate-5: Sending logon request with reset=false
+PQ 21:32:27:776 JTS-UpgradeChecker-7: Cannot reach the web server to check if the upgrade version is available.
+PQ 21:32:27:787 AWT-EventQueue-1: Accessing the internet failed.
+
+If you are behind a firewall, please enter your HTTP Proxy Settings
+(you can use the Lookup button to retrieve them).
+
+If you are not connected to the internet, you can improve performance
+by checking the "No internet connectivity" checkbox.
+PQ 21:32:27:859 JTS-PostAuthenticate-5: start ping with 1000 for: JTS-CCPPing-10
+PQ 21:32:27:860 JTS-CCPPing-10: Starting
+PQ 21:32:27:937 JTS-LogonDispatcher-9: LogonDispatcher received reject(probably running an old ccp version), reason [<html>The version of the application you are running, 918.9, is no longer supported.<br>
+Please download the current version <a href="http://www.interactivebrokers.com/en/p.php?f=tws&p=software&ib_entity=llc">from our web site</a>.</html>]
+PQ 21:32:28:598 JTS-colinit-8:   done

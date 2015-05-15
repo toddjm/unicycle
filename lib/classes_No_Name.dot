@@ -1,0 +1,17 @@
+digraph "classes_No_Name" {
+charset="utf-8"
+rankdir=BT
+"2" [shape="record", label="{TWS|config : NoneType, SafeConfigParser\lsleep\ltimeout\lautologin_subprocess : NoneType, Popen\lconfig : NoneType\lautologin_subprocess : NoneType\l|get_autologin_pid()\lkill_autologin_pid()\lget_config()\lis_ready()\lget_autologin_subprocess()\lclear_autologin_subprocess()\lis_connected()\l}"];
+"3" [shape="record", label="{fx|\l|get_currency()\lget_collect_cmds()\lget_symbol()\l}"];
+"4" [shape="record", label="{futures|atts\lcommodity\latts : NoneType\lcommodity : NoneType\l|get_exchange()\lget_currency()\lget_constraint()\lget_unix_from_time()\lget_expiry()\lget_symbol()\lget_to_time()\lget_from_time()\lget_atts()\lget_collect_cmds()\lget_unix_to_time()\l}"];
+"5" [shape="record", label="{collect|asset\lmult_file : NoneType\lexchange\ldate_str\lpexch : dict\lpexch_file : NoneType\lunicycle : new\ltable\lunicycle_config : new\lconfig : SafeConfigParser, NoneType\lmult : dict\ltks : new\lasset : NoneType\lmult_file : NoneType\lexchange : NoneType\ldate_str : NoneType\lpexch : NoneType\ltks : NoneType\lunicycle : NoneType\ltable : NoneType\lunicycle_config : NoneType\lconfig : NoneType\lmult : NoneType\lpexch_file : NoneType\l|get_asset()\lget_date_str()\linit()\lget_unicycle()\lcreate_asset()\lget_pexch()\lget_tks()\lget_config()\lget_table()\lget_mult()\lexecute()\lget_commands()\lget_unicycle_config()\l}"];
+"6" [shape="record", label="{asset|date\ltks\lmult\lpexch\ldate : NoneType\ltks : NoneType\lmult : NoneType\lpexch : NoneType\l|get_multiplier_str()\lget_exchange_type()\lget_from_time()\lget_primary_exchange_str()\lget_end_str()\lget_duration_str()\lget_constraint()\lget_unix_from_time()\lset_date()\lget_to_time()\lget_unix_to_time()\lget_samples()\lget_collect_cmds()\lget_symbol()\l}"];
+"7" [shape="record", label="{indices|\l|get_collect_cmds()\l}"];
+"3" -> "6" [arrowtail="none", arrowhead="empty"];
+"4" -> "6" [arrowtail="none", arrowhead="empty"];
+"7" -> "6" [arrowtail="none", arrowhead="empty"];
+"6" -> "5" [arrowhead="diamond", style="solid", arrowtail="none", fontcolor="green", label="asset"];
+"4" -> "5" [arrowhead="diamond", style="solid", arrowtail="none", fontcolor="green", label="asset"];
+"7" -> "5" [arrowhead="diamond", style="solid", arrowtail="none", fontcolor="green", label="asset"];
+"3" -> "5" [arrowhead="diamond", style="solid", arrowtail="none", fontcolor="green", label="asset"];
+}

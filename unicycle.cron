@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+# 1. Minute (specify from 0 to 59)
+# 2. Hour (specify from 0 to 23)
+# 3. Day of the month (specify from 1 to 31)
+# 4. Month (specify from 1 to 12, or a name such as jan, feb, and so on)
+# 5. Day of the week (specify from 0 to 6 where 0 is Sunday, or a name such as mon, tue, and so on)
+# 6. Command (can be multiple words)
+#
+# example:
+# * * * * * command
+#0 4 * * * . $HOME/.bashrc; $UNICYCLE_HOME/bin/update_summary.py equities
+3 * * * * . $HOME/.bashrc; cd $TICKS_HOME/equities/ib; make upload > upload.out 2> upload.err
+6 * * * * . $HOME/.bashrc; cd $TICKS_HOME/fx/ib; make upload > upload.out 2> upload.err
+9 * * * * . $HOME/.bashrc; cd $TICKS_HOME/futures/ib; make upload > upload.out 2> upload.err
+11 * * * * . $HOME/.bashrc; cd $TICKS_HOME; make update > update.out 2> update.err
