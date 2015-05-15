@@ -1,0 +1,4 @@
+[feed]
+time_zone = CDT
+db_name = futures_15sec
+valid_ts_tblname = futures_valid_15sec
