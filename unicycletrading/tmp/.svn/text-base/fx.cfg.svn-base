@@ -1,0 +1,26 @@
+[this]
+time_zone = CDT
+default_asset = usforex
+interval = 1day
+from_date = 2009-09-15
+to_date = 2010-12-29
+from_time = 07:20:00
+to_time = 14:00:00
+
+signals:
+	usforex	AUDUSD_tks	1=1
+	usforex	CHFJPY_tks	1=1
+	usforex	EURAUD_tks	1=1
+	usforex	EURCAD_tks	1=1
+	usforex	EURCHF_tks	1=1
+	usforex	EURGBP_tks	1=1
+	usforex	EURJPY_tks	1=1
+	usforex	EURUSD_tks	1=1
+	usforex	GBPCHF_tks	1=1
+	usforex	GBPJPY_tks	1=1
+	usforex	GBPUSD_tks	1=1
+	usforex	NZDUSD_tks	1=1
+	usforex	USDCAD_tks	1=1
+	usforex	USDCHF_tks	1=1
+	usforex	USDJPY_tks	1=1
+	usforex	USDMXN_tks	1=1
