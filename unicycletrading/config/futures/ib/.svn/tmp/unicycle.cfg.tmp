@@ -1,7 +1,0 @@
-[feed]
-time_zone = CDT
-<<<<<<< .mine
-valid_ts_dbname
-=======
-db_name = futures_15sec
->>>>>>> .r28

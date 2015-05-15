@@ -1,7 +1,0 @@
-[feed]
-time_zone = CDT
-<<<<<<< .working
-=======
-db_name = futures_15sec
-valid_ts_tblname = futures_valid_15sec
->>>>>>> .merge-right.r27
