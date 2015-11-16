@@ -5,7 +5,6 @@ import math
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy
-from mod_analytics import ks
 
 x = numpy.array([
     [-0.15],
@@ -33,9 +32,21 @@ y = numpy.array([
     [-0.37]
     ])
 
-print ks(x, y)
 
 # Kolmogorov-Smirnov two-sided two-sample test
+
+def ks_signif(x):
+    """Return smallest significance level for rejecting null hypothesis.
+
+    Use the asymptotic limiting case to compute Q(x) for
+    x > 0.
+    """
+    if (x <= 0.0):
+        return 0.0
+    v = 0.0
+    for i in range(-20, 20):
+        v += math.pow(-1.0, i) * math.exp(-2.0 * i ** 2 * x ** 2)
+    return (1.0 - v)
 
 def signif(s):
     if (s <= 0.0):
@@ -49,6 +60,62 @@ def gcd(a, b):
     while b:
         a, b = b, a%b
     return a
+
+def ks(x, y, plot=True):
+    """Kolmogorov-Smirnov two-sided, two-sample test.
+
+    Returns tuple of the test statistic for arrays `x` and `y` and
+    the significance level for rejecting the null hypothesis.
+    The empirical distribution functions F(t) and G(t) are
+    computed and (optionally) plotted.
+    """
+    # m, n = # of rows in each array x, y
+    m = x.shape[0]
+    n = y.shape[0]
+
+    # compute GCD for (m, n)
+    d = float(gcd(m, n))
+
+    # flatten, concatenate and sort all data from low to high
+    Z = numpy.concatenate((x.flatten(), y.flatten()))
+    Z = numpy.sort(Z)
+
+    # ECDFs evaluated at ordered combined sample values Z
+    F = numpy.zeros(len(Z))
+    G = numpy.zeros(len(Z))
+
+    # compute J
+    J = 0.0
+    for i in range(len(Z)):
+        for j in range(m):
+            if (x[j] <= Z[i]):
+                F[i] += 1
+        F[i] /= float(m)
+        for j in range(n):
+            if (y[j] <= Z[i]):
+                G[i] += 1
+        G[i] /= float(n)
+        j_max = numpy.abs(F[i] - G[i])
+        J = max(J, j_max)
+    J *= m * n / d
+    # the large-sample approximation
+    J_star = J * d / numpy.sqrt(m * n * (m + n))
+
+    if plot:
+        y = numpy.arange(m + n) / float(m + n)
+        plt.plot(F, y, 'm-', label='F(t)')
+        plt.plot(G, y, 'b-', label='G(t)')
+        plt.xlabel('value')
+        plt.ylabel('cumulative probability')
+        mpl.rcParams['legend.loc'] = 'best'
+        plt.legend()
+        plt.text(0.05, 0.05,
+                 'Copyright 2011 bicycle trading, llc',
+                 fontsize=15, color='gray', alpha=0.6)
+        plt.show()
+    return '{0:.4f} {1:.4f}'.format(J_star, ks_signif(J_star))
+
+print ks(x, y)
 
 # m, n = # of rows of data in each array
 m = x.shape[0]
