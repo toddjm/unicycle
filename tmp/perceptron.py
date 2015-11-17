@@ -18,7 +18,7 @@ inputs = numpy.array(
 # classification of inputs
 targets = numpy.array(
     [
-        [1.0], [1.0], [1.0], [0.0]
+        [0.0], [1.0], [1.0], [1.0]
         ]
     )
 
@@ -39,7 +39,7 @@ bias = -1.0 * numpy.ones((irows, 1))
 
 # construct inputs array with bias node appended
 inputs = numpy.concatenate((bias, inputs), axis=1)
-    
+
 # define activation function
 def g(x, w):
     a = numpy.dot(x, w)
@@ -66,5 +66,4 @@ while (cnt < steps):
     print 'SSE: ', sse(weights)
     print 'weights: ', numpy.transpose(weights)
     print 'outputs: ', numpy.transpose(outputs)
-    
     cnt += 1

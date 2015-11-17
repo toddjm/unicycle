@@ -14,8 +14,7 @@ vs = mod_vectorset.new(config_filename=sys.argv[1],
                        signal_class=MyModel,
                        verbose=False)
 
-# this assigns the ticker symbol as a global variable in this scope
-for key, value in vs.get_signals().iteritems():
+# this assigns the ticker symbol as a global variable in this scope for key, value in vs.get_signals().iteritems():
     globals()[key] = value
 
 for i in SPY.close:
