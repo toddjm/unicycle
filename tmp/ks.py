@@ -4,9 +4,9 @@
 import math
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy
+import numpy as np
 
-x = numpy.array([
+x = np.array([
     [-0.15],
     [8.60],
     [5.00],
@@ -19,7 +19,7 @@ x = numpy.array([
     [8.38]
     ])
 
-y = numpy.array([
+y = np.array([
     [2.55],
     [12.07],
     [0.46],
@@ -32,6 +32,8 @@ y = numpy.array([
     [-0.37]
     ])
 
+x = np.random.randn(1000, )
+y = np.random.randn(1000, )
 
 # Kolmogorov-Smirnov two-sided two-sample test
 
@@ -77,12 +79,12 @@ def ks(x, y, plot=True):
     d = float(gcd(m, n))
 
     # flatten, concatenate and sort all data from low to high
-    Z = numpy.concatenate((x.flatten(), y.flatten()))
-    Z = numpy.sort(Z)
+    Z = np.concatenate((x.flatten(), y.flatten()))
+    Z = np.sort(Z)
 
     # ECDFs evaluated at ordered combined sample values Z
-    F = numpy.zeros(len(Z))
-    G = numpy.zeros(len(Z))
+    F = np.zeros(len(Z))
+    G = np.zeros(len(Z))
 
     # compute J
     J = 0.0
@@ -95,14 +97,14 @@ def ks(x, y, plot=True):
             if (y[j] <= Z[i]):
                 G[i] += 1
         G[i] /= float(n)
-        j_max = numpy.abs(F[i] - G[i])
+        j_max = np.abs(F[i] - G[i])
         J = max(J, j_max)
     J *= m * n / d
     # the large-sample approximation
-    J_star = J * d / numpy.sqrt(m * n * (m + n))
+    J_star = J * d / np.sqrt(m * n * (m + n))
 
     if plot:
-        y = numpy.arange(m + n) / float(m + n)
+        y = np.arange(m + n) / float(m + n)
         plt.plot(F, y, 'm-', label='F(t)')
         plt.plot(G, y, 'b-', label='G(t)')
         plt.xlabel('value')
@@ -125,13 +127,13 @@ n = y.shape[0]
 d = float(gcd(m, n))
 
 # flatten, concatenate, and sort data low to high
-Z_t = numpy.concatenate((x.flatten(), y.flatten()))
-Z_t = numpy.sort(Z_t)
+Z_t = np.concatenate((x.flatten(), y.flatten()))
+Z_t = np.sort(Z_t)
 
 # empirical distribution functions evaluated
 # at the ordered combined sample values Z_t
-F_t = numpy.zeros(len(Z_t))
-G_t = numpy.zeros(len(Z_t))
+F_t = np.zeros(len(Z_t))
+G_t = np.zeros(len(Z_t))
 
 # two-sided, two-sample K-S test statistic
 J = 0.0
@@ -144,10 +146,10 @@ for ii in range(len(Z_t)):
         if (y[jj] <= Z_t[ii]):
             G_t[ii] += 1
     G_t[ii] /= float(n)
-    J_max = numpy.abs(F_t[ii] - G_t[ii])
+    J_max = np.abs(F_t[ii] - G_t[ii])
     J = max(J, J_max)
 J *= m * n / d
-J_star = J * d / numpy.sqrt(m * n * (m + n))
+J_star = J * d / np.sqrt(m * n * (m + n))
 
 # output
 print 'p-value = {0:.4f} and alpha = {1:.4f}'.format(J_star, signif(J_star)) 
@@ -155,7 +157,7 @@ print 'p-value = {0:.4f} and alpha = {1:.4f}'.format(J_star, signif(J_star))
 # for plotting ecdf and cdfs
 x1 = F_t
 x2 = G_t
-y = numpy.arange(m + n) / float(m + n)
+y = np.arange(m + n) / float(m + n)
 plt.plot(x1, y, 'm-', label='F_t')
 plt.plot(x2, y, 'b-', label='G_t')
 plt.xlabel('value')
